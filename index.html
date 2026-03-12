@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Car Service Management System</title>
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;800&display=swap"
+            rel="stylesheet">
+
+        <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Cairo',sans-serif;
+}
+
+body{
+background:#f8fafc;
+color:#0f172a;
+line-height:1.7;
+}
+
+/* HERO */
+
+.hero{
+
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.65)),
+url("./image/car.jpg");
+
+background-size:cover;
+background-position:center;
+
+color:white;
+padding:40px;
+
+}
+
+.hero h1{
+
+font-size:56px;
+font-weight:800;
+margin-bottom:25px;
+
+}
+
+.hero p{
+
+font-size:20px;
+max-width:700px;
+margin:auto;
+margin-bottom:40px;
+
+}
+
+.btn{
+
+background:#2563eb;
+padding:16px 40px;
+border-radius:10px;
+color:white;
+font-size:18px;
+text-decoration:none;
+transition:.3s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-3px);
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+}
+
+/* SECTION */
+
+.section{
+
+padding:60px 20px;
+max-width:1200px;
+margin:auto;
+
+}
+
+
+.sectionmsssss{
+
+padding:0px 20px;
+max-width:1200px;
+margin:auto;
+
+}
+
+.section-title{
+
+font-size:42px;
+text-align:center;
+margin-bottom:60px;
+font-weight:800;
+
+}
+
+/* VIDEO */
+
+.video-container{
+
+display:flex;
+justify-content:center;
+
+}
+
+.video-container iframe{
+
+width:100%;
+max-width:900px;
+height:500px;
+border-radius:20px;
+box-shadow:0 30px 80px rgba(0,0,0,.15);
+
+}
+
+/* FEATURES */
+
+.features{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+
+}
+
+.feature{
+
+background:white;
+padding:35px;
+border-radius:16px;
+box-shadow:0 20px 40px rgba(0,0,0,.05);
+transition:.3s;
+
+}
+
+.feature:hover{
+
+transform:translateY(-8px);
+
+}
+
+.feature h3{
+
+font-size:22px;
+margin-bottom:10px;
+
+}
+
+/* SLIDER */
+
+.swiper{
+
+max-width:1000px;
+
+}
+
+.swiper img{
+
+width:100%;
+border-radius:20px;
+box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+}
+
+/* ABOUT */
+
+.about{
+
+text-align:center;
+max-width:700px;
+margin:auto;
+
+}
+
+.about p{
+
+font-size:18px;
+
+}
+
+/* FOOTER */
+
+footer{
+
+margin-top:80px;
+background:#020617;
+color:white;
+text-align:center;
+padding:40px;
+
+}
+
+.social a{
+
+color:white;
+margin:0 10px;
+text-decoration:none;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:36px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.video-container iframe{
+height:300px;
+}
+
+}
+
+</style>
+
+    </head>
+
+    <body>
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="animate__animated animate__fadeInDown">
+
+                <h1>
+                    سيستم احترافي لإدارة
+                    مراكز خدمة السيارات
+                </h1>
+
+                <p>
+
+                    نظام ذكي يساعدك على إدارة العملاء والفواتير والخدمات
+                    داخل مركز الخدمة بسهولة وتنظيم كامل للعمل.
+
+                </p>
+
+                <a href="#video" class="btn">
+
+                    شاهد شرح النظام
+
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- VIDEO -->
+
+        <section id="video" class="section">
+
+            <h2 class="section-title animate__animated animate__fadeInUp">
+
+                فيديو شرح النظام
+
+            </h2>
+
+            <div class="video-container animate__animated animate__zoomIn">
+
+                <iframe
+                    src="https://www.youtube.com/embed/XzbYYujOgQA?si=3AlZfyWq4rv9P9gC"
+                    frameborder="0"
+                    allowfullscreen>
+
+                </iframe>
+
+            </div>
+
+        </section>
+
+        <!-- FEATURES -->
+
+        <section class="section">
+
+            <h2 class="section-title animate__animated animate__fadeInUp">
+
+                مميزات النظام
+
+            </h2>
+
+            <div class="features">
+
+                <div class="feature animate__animated animate__fadeInUp">
+
+                    <h3>نقطة بيع POS</h3>
+
+                    <p>
+
+                        واجهة كاشير احترافية لإنشاء الفواتير بسرعة وسهولة.
+
+                    </p>
+
+                </div>
+
+                <div class="feature animate__animated animate__fadeInUp">
+
+                    <h3>إدارة العملاء</h3>
+
+                    <p>
+
+                        تخزين بيانات العملاء والسيارات الخاصة بهم.
+
+                    </p>
+
+                </div>
+
+                <div class="feature animate__animated animate__fadeInUp">
+
+                    <h3>إدارة الخدمات</h3>
+
+                    <p>
+
+                        إضافة جميع خدمات مركز الصيانة بسهولة.
+
+                    </p>
+
+                </div>
+
+                <div class="feature animate__animated animate__fadeInUp">
+
+                    <h3>إدارة الموظفين</h3>
+
+                    <p>
+
+                        كل موظف لديه حساب خاص داخل النظام.
+
+                    </p>
+
+                </div>
+
+                <div class="feature animate__animated animate__fadeInUp">
+
+                    <h3>تقارير دقيقة</h3>
+
+                    <p>
+
+                        معرفة الإيرادات وعدد السيارات يومياً.
+
+                    </p>
+
+                </div>
+
+                <div class="feature animate__animated animate__fadeInUp">
+
+                    <h3>العروض والخصومات</h3>
+
+                    <p>
+
+                        إمكانية إضافة عروض لزيادة المبيعات.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SLIDER -->
+
+        <section class="section">
+
+            <h2 class="section-title">
+
+                صور من النظام
+
+            </h2>
+
+            <div class="swiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+
+                        <img
+                            src="image/9.PNG">
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <img
+                            src="image/1.PNG">
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <img
+                            src="image/2.PNG">
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <img
+                            src="image/3.PNG">
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <img
+                            src="image/4.PNG">
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <img
+                            src="image/5.PNG">
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <img
+                            src="image/6.PNG">
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <img
+                            src="image/7.PNG">
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <img
+                            src="image/8.PNG">
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <img
+                            src="image/10.PNG">
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <img
+                            src="image/11.PNG">
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <img
+                            src="image/12.PNG">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ABOUT -->
+
+        <section class="sectionmsssss">
+
+            <h2 class="section-title">
+
+                عن المطور
+
+            </h2>
+
+            <div class="about">
+
+                <p>
+
+                    أنا أحمد العيدي
+                    Full Stack Developer بخبرة أكثر من 4 سنوات
+                    في تطوير الأنظمة والمواقع والتطبيقات.
+
+                    قمت بتطوير هذا النظام لمساعدة
+                    مراكز خدمة السيارات على تنظيم العمل
+                    وزيادة الإنتاجية.
+
+                    كما يمكن تطوير تطبيق موبايل
+                    مرتبط بالنظام في المستقبل.
+
+                </p>
+
+                <br>
+
+                <a class="btn" href="https://my-portfolio-new-b84u.vercel.app/"
+                    target="_blank">
+
+                    موقعي الشخصي
+
+                </a>
+
+            </div>
+
+        </section>
+
+        <footer>
+
+            <p>© Ahmed Eleidy</p>
+
+            <div class="social">
+
+                <a
+                    href="https://www.linkedin.com/in/ahmed-alayadi-3a3bb3291/">LinkedIn</a>
+                <a href="tel:+201006082709" target="_blank">Call Me</a>
+                <a
+                    href="https://www.tiktok.com/@alaydi.dev?is_from_webapp=1&sender_device=pc"
+                    target="_blank">TikTok</a>
+
+            </div>
+
+        </footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script>
+
+new Swiper('.swiper',{
+
+loop:true,
+
+autoplay:{
+delay:2500
+}
+
+})
+
+</script>
+
+    </body>
+
+</html>
